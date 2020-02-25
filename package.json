@@ -1,0 +1,26 @@
+{
+  "name": "Symmetrical-calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass --watch src/styles.scss dist/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rokoc003/Symmetrical-calc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rokoc003/Symmetrical-calc/issues"
+  },
+  "homepage": "https://github.com/rokoc003/Symmetrical-calc#readme",
+  "devDependencies": {
+    "htmlhint": "^0.11.0",
+    "prettier": "^1.19.1",
+    "sass": "^1.26.0"
+  }
+}
