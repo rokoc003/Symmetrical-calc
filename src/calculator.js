@@ -38,3 +38,12 @@ function allclearClick() {
 }
 
 calculatorClearAll.addEventListener("click", allclearClick);
+
+function addInputEventListener(calculatorInput) {
+  function handleCalculatorInputClick() {
+    calculatorOutput.value = calculatorInput.innerText;
+  }
+  calculatorInput.addEventListener("click", handleCalculatorInputClick);
+}
+
+calculatorInputs.forEach(addInputEventListener);
