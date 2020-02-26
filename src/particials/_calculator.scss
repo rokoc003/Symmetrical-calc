@@ -19,7 +19,11 @@
   border: solid rgb(204, 202, 202) 1px;
 }
 
-.calculator__input {
+.calculator__input,
+.calculator__operator,
+.calculator__clear,
+.calculator__clearall,
+.calculator__result {
   flex-basis: calc(90% / 4);
   height: 50px;
   max-width: 100%;
