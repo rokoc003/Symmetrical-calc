@@ -1,7 +1,7 @@
 "use strict";
 
 const calculatorOutput = document.querySelector(".calculator__output");
-const calculatorOutput = document.querySelector(".calculator__input");
+const calculatorInput = document.querySelector(".calculator__input");
 
 function add(numberOne, numberTwo) {
   return numberOne + numberTwo;
