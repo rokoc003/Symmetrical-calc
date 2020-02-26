@@ -1,0 +1,11 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 1px, 1px, 1px, 1px;
+}
+
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgba(190, 116, 47, 0.904);
+}
