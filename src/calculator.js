@@ -36,7 +36,7 @@ function handleResultClick() {
 }
 calculatorResult.addEventListener("click", handleResultClick);
 
-function allclearClick() {
+function allClear() {
   calculatorOutput.value = "";
   console.log("click");
 }
@@ -62,7 +62,7 @@ calculatorInputs.forEach(addInputEventListener);
 function addOperatorEventListener(CalculatorOperator) {
   function handleCalculatorOperatorClick() {
     numberOne = Number(calculatorOutput.value);
-    clear();
+    allClear();
     console.log(
       "handleCalculatorOperatorCLick",
       numberOne,
