@@ -16,7 +16,7 @@ function handleResultClick() {
     "handleResultClick",
     numberOne,
     numberTwo,
-    CalculatorOutput.value
+    calculatorOutput.value
   );
 }
 calculatorResult.addEventListener("click", handleResultClick);
