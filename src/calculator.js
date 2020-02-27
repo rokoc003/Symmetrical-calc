@@ -1,4 +1,4 @@
-"use strict";
+import { add, subtract, multiply, divide } from "./math.js";
 
 const calculatorOutput = document.querySelector(".calculator__output");
 const calculatorInputs = document.querySelectorAll(".calculator__input");
@@ -6,21 +6,6 @@ const calculatorResult = document.querySelector(".calculator__result");
 const calculatorClearAll = document.querySelector(".calculator__clearall");
 const calculatorOperators = document.querySelectorAll(".calculator__operator");
 
-function add(numberOne, numberTwo) {
-  return numberOne + numberTwo;
-}
-
-function subtract(numberOne, numberTwo) {
-  return numberOne - numberTwo;
-}
-
-function divide(numberOne, numberTwo) {
-  return numberOne / numberTwo;
-}
-
-function multiply(numberOne, numberTwo) {
-  return numberOne * numberTwo;
-}
 let numberOne = 0;
 let numberTwo = 0;
 
@@ -41,7 +26,7 @@ function allClear() {
   console.log("click");
 }
 
-calculatorClearAll.addEventListener("click", allclearClick);
+calculatorClearAll.addEventListener("click", allClear);
 
 function addInputEventListener(calculatorInput) {
   function handleCalculatorInputClick() {
@@ -59,7 +44,7 @@ function addInputEventListener(calculatorInput) {
 
 calculatorInputs.forEach(addInputEventListener);
 
-function addOperatorEventListener(CalculatorOperator) {
+function addOperatorEventListener(calculatorOperator) {
   function handleCalculatorOperatorClick() {
     numberOne = Number(calculatorOutput.value);
     allClear();
@@ -67,9 +52,9 @@ function addOperatorEventListener(CalculatorOperator) {
       "handleCalculatorOperatorCLick",
       numberOne,
       numberTwo,
-      CalculatorOutput.value
+      calculatorOutput.value
     );
   }
-  CalculatorOperator.addEventListener("click", handleCalculatorOperatorClick);
+  calculatorOperator.addEventListener("click", handleCalculatorOperatorClick);
 }
 calculatorOperators.forEach(addOperatorEventListener);
